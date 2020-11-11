@@ -1,0 +1,26 @@
+   {{>_header }}
+
+{{#if stories}}
+
+
+        {{#each stories}}
+        <div class="card">
+            <h4>{{product_name}}</h4>
+            <h5>{{price}}</h5>
+            <img src="http://localhost:7700/{{file.[0]}}"/>
+            <i class="fas fa-heart"></i>
+        </div>
+        
+        {{/each}}
+    
+
+
+
+
+
+
+
+
+{{else}}
+<p>You have not created any stories</p>
+{{/if}}

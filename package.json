@@ -1,0 +1,32 @@
+{
+  "name": "onlinebotiqe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "flash": "^1.1.0",
+    "mongoose": "^5.10.13",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "DEV": "nodemon server.js",
+    "debug": "DEBUG=express:* nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javidnoshadi/onlinebotiqe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javidnoshadi/onlinebotiqe/issues"
+  },
+  "homepage": "https://github.com/javidnoshadi/onlinebotiqe#readme"
+}
