@@ -1,10 +1,11 @@
-*{
+* {
     position: relative;
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --dark-orange: #E56626;
     --mid-orange: #E4804D;
 }
@@ -12,90 +13,127 @@
 /* Header partial styles */
 
 
-.header{
+.header {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     height: 50px;
-    border-bottom:2px solid #F58349;
+    border-bottom: 2px solid #F58349;
 }
-.header svg{
-    fill:#E4804D;
+
+.header svg {
+    fill: #E4804D;
 }
-.logo{
-    width:80px;
+
+.logo {
+    width: 80px;
 }
-.ham-toggle{
+
+.ham-toggle {
     pointer-events: pointer;
     color: #E4804D;
-    font-size:2em;
-    
+    font-size: 2em;
+
 }
-.ham-panel{
+
+.ham-panel {
     display: none;
     transition: .3s ease;
     height: 300px;
     width: 50px;
 }
-.ham-panel.open{
+
+.ham-panel.open {
     display: block;
     height: 300px;
     width: 100px;
     position: absolute;
     top: 50px;
     left: 10px;
-    
+
 }
-.header .cart{
+
+.header .cart {
     display: none;
 }
-.header a{
+
+.header a {
     text-decoration: none;
     color: black;
 }
-.right a{
+
+.right a {
     padding: 7px 14px;
-    border-radius:4px;
-    background: linear-gradient(60deg, #E1895D,#DB7846,#E68250);
-    
+    border-radius: 4px;
+    background: linear-gradient(60deg, #E1895D, #DB7846, #E68250);
+
 }
-.header li{
+
+.header li {
     list-style: none;
 }
 
 
-.login-container{
+.login-container {
     height: 100vh;
     width: 100%;
 }
-.login-container form{
-    height:300px;
-    width:400px;
+
+.login-container form {
+    height: 300px;
+    width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     background: #B98C76;
 }
-.login-container svg{
+
+.login-container svg {
     transform: scale(4);
 }
 
 
 
-.dashboard-card{
+.dashboard-card {
     height: 200px;
     width: 200px;
     background: #CED0EA;
-    border-radius:7px;
-    margin:20px;
-    display: flex;
+    border-radius: 7px;
+    margin: 20px;
 }
-.dashboard-card img{
+
+.dashboard-card img {
     height: 40px;
+}
+
+.single-card {
+    height: 50vh;
+    width: 100%;
+    background: #8084AC;
+}
+
+.delete-dialog-box {
+    display: none;
+    transition: .5s ease all;
+    
+}
+    
+
+.delete-dialog-box.open {
+    height: 200px;
+    display: block;
+    width: 300px;
+    background: #53DD5F;
+    z-index: 5000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }

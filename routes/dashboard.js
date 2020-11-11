@@ -48,4 +48,26 @@ router
             console.log(e)
         }
     })
+    .get('/:id', async(req,res)=>{
+        const singlePost = await Post.findById(req.params.id).populate('user').lean()
+        res.render('single',{
+            singlePost
+        })
+    })
+    .post('/:id', async(req,res)=>{
+     await Post.remove({_id: req.params.id})
+            res.redirect('/dashboard')
+    })
+    .get('/edit/:id', async(req,res)=>{
+        const toEdit = await Post.findOne({_id: req.params.id}).lean()
+        res.render('edit',{
+            toEdit
+        })
+    })
+    .post('/edit/:id', async(req,res)=>{
+        await Post.findOneAndUpdate({_id: req.params.id},req.body)
+        res.redirect('/dashboard')
+    })
+    
+    
 module.exports = router

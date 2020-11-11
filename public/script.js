@@ -1,7 +1,9 @@
-const hambtn = document.querySelector('.ham-toggle')
-hambtn.addEventListener('click',(e)=>{
-    let ham_panel = document.querySelector('.ham-panel')
-    console.log('toggle');
-    ham_panel.classList.toggle('open')
-    hambtn.classList.toggle('fa-times')
-})
+
+
+const delBtn = document.querySelector('.delete-btn')
+delBtn.addEventListener('click',Delete_btn)
+function Delete_btn(){
+    let dialogbox = document.querySelector('.delete-dialog-box')
+    dialogbox.classList.toggle('open')
+    console.log('toggling ')
+}

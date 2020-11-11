@@ -1,0 +1,23 @@
+{{#if singlePost}}
+       <div class="single-card">
+           <h4>{{product_name}}</h4>
+            <img src="http://localhost:7700/{{file.[0]}}"/>
+            <h4>{{quantity}}</h4>
+            <h6>{{price}}</h6>
+            
+            <a href="/dashboard/edit/{{_id}}">نمایش</a>
+                <button class="delete-btn">حذف</button>
+       </div>
+    
+        <div class="delete-dialog-box">
+            <form action="/dashboard/{{singlePost._id}}" method="POST" id="delete-form">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn red">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+            <h3 class="nevermind">nevermind</h3>
+        </div>
+{{else}}
+<p>You have not created any stories</p>
+{{/if}}
