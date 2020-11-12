@@ -4,13 +4,24 @@
     <meta charset="utf-8">
     <title>Example App</title>
     <link rel="stylesheet" href="/style.css" />
+<link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     {{{body}}}
-<script src="https://kit.fontawesome.com/bf0cb79f35.js" crossorigin="anonymous"></script>
 <script src="//cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>
 <script src="/script.js"></script>
+<!--
+<script src="../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+<script>
+    ClassicEditor.create( document.querySelector( '#product_description' ) )
+        .then( editor => {
+            window.editor = editor;
+        } )
+        .catch( error => {
+            console.error( 'There was a problem initializing the editor.', error );
+        } );
+</script> -->
 </body>
 </html>

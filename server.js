@@ -24,10 +24,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 
-app.use('/dashboard',require('./routes/dashboard.js')
-)
-
+app.use('/dashboard', require('./routes/dashboard.js'))
+app.use('/', require('./routes/client.js'))
 
 let ConsoleClock = new Date()
-app.listen(8080
-,console.log(`server started at ${ConsoleClock.getHours()}:${ConsoleClock.getMinutes()}:${ConsoleClock.getSeconds()}` ))
+app.listen(8080, console.log(`server started at ${ConsoleClock.getHours()}:${ConsoleClock.getMinutes()}:${ConsoleClock.getSeconds()}`))
