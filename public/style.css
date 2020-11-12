@@ -8,132 +8,94 @@
 :root {
     --dark-orange: #E56626;
     --mid-orange: #E4804D;
-}
-
-/* Header partial styles */
-
-
-.header {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    border-bottom: 2px solid #F58349;
-}
-
-.header svg {
-    fill: #E4804D;
-}
-
-.logo {
-    width: 80px;
-}
-
-.ham-toggle {
-    pointer-events: pointer;
-    color: #E4804D;
-    font-size: 2em;
-
-}
-
-.ham-panel {
-    display: none;
-    transition: .3s ease;
-    height: 300px;
-    width: 50px;
-}
-
-.ham-panel.open {
-    display: block;
-    height: 300px;
-    width: 100px;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-
-}
-
-.header .cart {
-    display: none;
-}
-
-.header a {
-    text-decoration: none;
-    color: black;
-}
-
-.right a {
-    padding: 7px 14px;
-    border-radius: 4px;
-    background: linear-gradient(60deg, #E1895D, #DB7846, #E68250);
-
-}
-
-.header li {
-    list-style: none;
+    --text-color:rgba(0,0,0,.8);
 }
 
 
-.login-container {
-    height: 100vh;
+
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+.login-container{
+    height:100vh;
     width: 100%;
 }
-
-.login-container form {
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.login-form-container{
+   height: 300px;
+   width:70%;
+   border-radius: 4px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   box-shadow: 3px 0 5px #A8A8AB;
+}
+.login-form-container form{
+    height: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    background: #B98C76;
+    justify-content: space-around;
+    direction: rtl;
 }
-
-.login-container svg {
-    transform: scale(4);
+.form-links{
+    width:100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    direction: rtl;
+    word-wrap: normal;
 }
-
-
-
-.dashboard-card {
-    height: 200px;
-    width: 200px;
-    background: #CED0EA;
-    border-radius: 7px;
-    margin: 20px;
+.form-links a{
+    padding: 7px 13px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid #FF852BD9;
+    border-radius: 3px;
+    transition: .4s ease;
 }
-
-.dashboard-card img {
-    height: 40px;
+.form-links a:hover{
+    background: #FF852BD9;
+    color: white;
 }
-
-.single-card {
-    height: 50vh;
+.form-links 
+.login-footer{
     width: 100%;
-    background: #8084AC;
-}
-
-.delete-dialog-box {
-    display: none;
-    transition: .5s ease all;
-    
-}
-    
-
-.delete-dialog-box.open {
-    height: 200px;
-    display: block;
-    width: 300px;
-    background: #53DD5F;
-    z-index: 5000;
+    height: 5vh;
+    bottom: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
+    background: linear-gradient(90deg ,#EA741DD9,#E88D4AD9,#FD710AD9);
 }
+.login-footer p{
+    text-align: center;
+}
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
