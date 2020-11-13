@@ -3,12 +3,19 @@ const exphbs = require('express-handlebars')
 const express = require('express')
 const bodyParser = require('body-parser')
 const connectDB = require('./config/db.js')
+var flash = require('connect-flash');
+const session = require('express-session')
 connectDB()
 const app = express()
 
 
+app.use(session({
+    secret: 'javidity.ir',
+    saveUninitialized: true,
+    resave: true
+}));
 
-
+app.use(flash());
 
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -20,7 +27,6 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs');
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-
 
 
 
