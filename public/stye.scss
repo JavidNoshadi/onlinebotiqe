@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+$light:yellow;
+$almostDark: rgba(0,0,0,.8);
+.login-container{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .login-form-container{
+        max-height: 370px;
+        height: 370px;
+        max-width: 80%;
+        width: 80%;
+        background: white;
+        box-shadow: 1px 0px 2px $almostDark,-1px 0px 2px $almostDark;
+        border-radius: 5px;
+        display:inherit;
+    }
+
+        img{
+            border-radius:50%;
+            height: 150px;
+            width: 150px;
+        }
+    
+}
