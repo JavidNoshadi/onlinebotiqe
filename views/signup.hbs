@@ -1,28 +1,37 @@
-
-<div class="signup-container">
-
-{{#each errors}} <h3>{{msg}}</h3>{{/each}}
-    <form action="/signup" method="POST">
-        <div>
-                <label for="username">Email</label>
-                <input value="god himself" name="username" type="text" id="username"/>
+<div class="container">
+    <div id="sec-one">
+       <img src="/assets/logo.jpg" />
+        <h4>{{msg}}j</h4>
+        <form action="/signup" method="post">
+            <div class="__email">
+            <label for="email">ایمیل:</label>
+            <input type="email" 
+            placeholder="email" 
+            id="email"
+            name="email"
+            value="GodMode@g"/>
+            <a href="#sec-two">مرحله بعد</a>
+            <p>قبلا ثبت نام کردی؟ <a>کلیک کن!</a> </p>
             </div>
-        <div>
-            <label for="Email">Email</label>
-            <input value="godmode@god.com" name="email" type="text" id="Email"/>
+    </div>
+    <div id="sec-two">
+        <div class="__password">
+            <label for="password">رمز عبور:</label>
+            <input type="password"
+            placeholder="password"
+            id="password"
+            name="password"
+            value="godModeG" />
         </div>
-        <div>
-     <label for="Password">Password</label>
-   <input value="password" name="password" type="password" id="password"/>    </div>
-        <label for="Password2">Password</label>
-      <input value="password" name="password2" type="password" id="Password2"/>    </div>
-   <div>
-   <button type="submit">Signup</button>
-   <button type="reset">Reset</button>
-   </div>
-    </form>
-    <div>
-          <a href="/">Back</a>
-              <a href="#">Have an account ? login here</a>
+        <div class="__password2">
+          <label for="password2">تکرار رمز عبور</label>
+            <input type="password"
+            placeholder="password2"
+            id="password2"
+            name="password2"
+            value="godModeG" />
+        </div>
+        <button type="submit">ساخت حساب کاربری</button>
+        </form>
     </div>
 </div>

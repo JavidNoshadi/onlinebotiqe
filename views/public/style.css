@@ -1,0 +1,141 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light: #996CF5;
+    --darker: #9160F5;
+    --text-color:rgba(0,0,0,.7);
+    --font-awesome: "Font Awesome 5 Free";
+}
+
+
+
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+.login-container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+}
+
+/* this goes to no ehere, becuase it apeear time to to , not always. */
+.login-container h4{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
+.login-container img{
+    height: 100px;
+    width: 100px;
+}
+.login-form-container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 75%;
+    max-width: 350px;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    box-shadow: 1px 1px 2px #C7C5CCF7,
+    -1px -1px 2px #C7C5CCF7;
+}
+.login-form-container form{
+        justify-content: space-around;
+        align-items:center;
+        display: flex;
+        flex-direction:column;
+        flex: 3;
+        width: 80%;
+}
+.login-form-container .form-links{
+    justify-content: space-between;
+    align-items:center;
+    display: flex;
+    flex: 1;
+    width: 70%;
+}
+.login-form-container form input{
+    border-radius:3px;
+    outline: none;
+    padding: 7px 2px;
+    border: 1px solid #DBDBDBF7;
+    direction: ltr;
+}
+.login-form-container form button{
+    outline: none;
+    border-radius:5px;
+    padding: 5px 50px;
+    background: none;
+    font-size: 20px;
+    color:var(--text-color);
+    border:2px solid var(--light);
+    transition:.3s ease;
+}
+.login-form-container form button:hover{
+    border: none;
+    color:#F3F3F3;
+    background-color:var(--light);
+}
+.login-form-container form button:visited{
+    transform:scale(0.95);
+}
+.login-form-container .form-links a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 25px;
+    border-radius:4px;
+    cursor: pointer;
+}
+.form-links .__left:after{
+    content: "\f54f";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right:3px;
+}
+
+
+
+/* ------------------------------
+-----------
+            To Do 
+           input icons
+           ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
+
+/* ------------------------------
+-----------LOGIN PAGE ------------
+--------------------------------*/
