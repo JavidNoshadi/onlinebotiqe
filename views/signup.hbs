@@ -1,19 +1,21 @@
 
 <div class="signup-container">
+
+{{#each errors}} <h3>{{msg}}</h3>{{/each}}
     <form action="/signup" method="POST">
         <div>
                 <label for="username">Email</label>
-                <input value="username" name="username" type="text" id="username"/>
+                <input value="god himself" name="username" type="text" id="username"/>
             </div>
         <div>
             <label for="Email">Email</label>
-            <input value="javid.king63@gmail.com" name="email" type="text" id="Email"/>
+            <input value="godmode@god.com" name="email" type="text" id="Email"/>
         </div>
         <div>
      <label for="Password">Password</label>
-   <input value="password" name="password"type="password" id="Password"/>    </div>
+   <input value="password" name="password" type="password" id="password"/>    </div>
         <label for="Password2">Password</label>
-      <input value="password2" name="password2" type="password" id="Password2"/>    </div>
+      <input value="password" name="password2" type="password" id="Password2"/>    </div>
    <div>
    <button type="submit">Signup</button>
    <button type="reset">Reset</button>
@@ -23,5 +25,4 @@
           <a href="/">Back</a>
               <a href="#">Have an account ? login here</a>
     </div>
-    {{msg}}
 </div>
