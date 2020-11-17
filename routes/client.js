@@ -26,19 +26,17 @@ router
     
     .post('/signup', async(req,res)=>{
         try {
-            User.findOne({email : req.body.email},
-            function(err,success){
+            const user = User.findOne({email : req.body.email},(success,error)=>{
                 if(success){
-                    res.render('signup',{
-                        msg: 'found one'
-                    })
+                    console.log('foundone');
+                    return
                 }else{
-                    User.create({email: req.body.email})
-                    res.redirect('/signup/lastStep')
+                    console.log('didnt find');
+                    User.create(req.body)
                 }
             })
-        } catch (e) {
-            console.log(e)
+        } catch (error) {
+            console.log(error);
         }
     })
 module.exports = router;
